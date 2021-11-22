@@ -1,2 +1,11 @@
-# hello-world
-hello world program
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
